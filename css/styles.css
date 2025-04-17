@@ -99,16 +99,18 @@ nav ul a:hover {
     text-align: left;
   }
   .hero-content {
-    max-width: 60%;
+    flex: 1;
   }
   .hero-image {
-    max-width: 35%;
+    flex: 0 0 200px;       /* sidebar width */
+    margin-left: 2rem;
   }
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 220px;
+  max-width: 160px;        /* adjust for smaller/larger as you like */
+  height: auto;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
