@@ -29,6 +29,20 @@ body {
   padding: 2rem 0;
 }
 
+.btn {
+  display: inline-block;
+  background: var(--navy-500);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+  background: var(--navy-700);
+}
+
 /* NAVIGATION */
 nav {
   background: var(--navy-900);
@@ -58,6 +72,13 @@ nav ul a {
 }
 nav ul a:hover {
   color: #fff;
+}
+
+@media (max-width: 767px) {
+  nav a.logo {
+    display: none !important;
+  }
+
 }
 
 /* HERO / HEADER */
@@ -102,22 +123,22 @@ nav ul a:hover {
   .hero-content {
     flex: 1;
     padding-left: 2rem;
-    max-width: 960px;
   }
   .hero-image {
-    flex: 0 0 200px;       /* sidebar width */
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding-right: 2rem;
+    flex: 0 0 500px;
+    display: flex;
   }
+
 }
 
 .hero-image img {
+  display: block;
   width: 100%;
-  max-width: 160px;
+  max-width: 200px;      /* never exceed 160px */
   height: auto;
-  border-radius: 0;             /* <- changed from 50% */
+  border-radius: 0;      /* keep rectangular */
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin: 0 auto;        /* center in its container */
   transition: transform 0.3s ease;
 }
 .hero-image img:hover {
