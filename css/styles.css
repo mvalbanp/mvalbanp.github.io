@@ -100,6 +100,7 @@ nav ul a:hover {
   }
   .hero-content {
     flex: 1;
+    padding-left: 2rem;
   }
   .hero-image {
     flex: 0 0 200px;       /* sidebar width */
@@ -109,9 +110,9 @@ nav ul a:hover {
 
 .hero-image img {
   width: 100%;
-  max-width: 160px;        /* adjust for smaller/larger as you like */
+  max-width: 160px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 0;             /* <- changed from 50% */
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
 }
