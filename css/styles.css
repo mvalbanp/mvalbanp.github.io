@@ -107,6 +107,7 @@ nav ul a:hover {
   .hero-image {
     flex: 0 0 200px;       /* sidebar width */
     margin-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -227,7 +228,7 @@ footer {
 /* ==== SOCIAL ICONS (fixed) ==== */
 .social-icons {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
