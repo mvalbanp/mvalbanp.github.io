@@ -107,6 +107,7 @@ nav ul a:hover {
   .hero-image {
     flex: 0 0 200px;       /* sidebar width */
     margin-left: 2rem;
+    margin-right: 2rem;
     padding-right: 2rem;
   }
 }
