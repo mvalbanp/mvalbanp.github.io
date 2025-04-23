@@ -27,6 +27,14 @@ body {
   padding: 1rem 0;
 }
 
+strong, b {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 200;
+}
+
 /* NAVIGATION */
 nav {
   background-color: var(--pastel-navy);
@@ -225,7 +233,7 @@ footer {
   display: flex;
   gap: 1rem;
   margin-top: 1.5rem;
-  justify-content: center;
+  justify-content: start;
 }
 .social-icons a i {
   color: #fff;
