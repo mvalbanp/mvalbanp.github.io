@@ -4,15 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact – Marco Alban‑Paccha</title>
+  <!-- SEO & Social Sharing metas -->
+  <meta name="description" content="Marco Vinicio Alban-Paccha – Postdoctoral Research Associate at the University of Cambridge researching wearable & implantable bioelectronics.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="Marco Alban-Paccha">
+  <meta property="og:title"       content="Marco Alban-Paccha – Postdoctoral Research Associate">
+  <meta property="og:description" content="Interdisciplinary research at the nexus of medicine & engineering.">
+  <meta property="og:url"         content="https://marcoalban.com/">
+  <meta property="og:image"       content="https://marcoalban.com/assets/img/people/Marco.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@DrMarcoAlban">
+  <meta name="twitter:title"       content="Marco Alban-Paccha – Postdoc @ Cambridge">
+  <meta name="twitter:description" content="Wearable bioelectronics & AI-driven healthcare.">
+  <meta name="twitter:image"       content="https://marcoalban.com/assets/img/people/Marco.jpg">
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marco Vinicio Alban-Paccha",
+    "url": "https://marcoalban.com/",
+    "image": "https://marcoalban.com/assets/img/people/Marco.jpg",
+    "jobTitle": "Postdoctoral Research Associate",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "University of Cambridge"
+    },
+    "sameAs": [
+      "https://twitter.com/DrMarcoAlban",
+      "https://www.linkedin.com/in/marco-vinicio-alban/",
+      "https://scholar.google.com/citations?user=DW_Op-gAAAAJ&hl=en"
+    ],
+    "description": "Interdisciplinary researcher in wearable & implantable bioelectronics at the University of Cambridge."
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
   <!-- NAVIGATION -->
   <nav>
-    <div class="container">
-      <a class="logo" href="index.html">Marco Alban‑Paccha</a>
-      <ul>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Marco Alban‑Paccha</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -21,30 +68,21 @@
     </div>
   </nav>
 
-  <!-- CONTACT INFO -->
+  <!-- CONTACT SECTION -->
   <section class="container">
     <h2 class="section-title">Get in Touch</h2>
-
     <div class="contact-details">
-      <p><strong>Email: </strong>ma2035 at cam dot ac dot uk</a></p>
-      <br>
-      <p><strong>Address:</strong><br>
-         Marco is located at the West Cambridge site, in the Electrical Engineering building.<br>
-         Electrical Engineering Division<br>
-         9 JJ Thomson Ave<br>
-         Cambridge CB3 0FA<br>
+      <p><strong>Email:</strong> ma2035 at cam dot ac dot uk</p>
+      <p><strong>Address:</strong><br/>
+         Electrical Engineering Division<br/>
+         9 JJ Thomson Ave<br/>
+         Cambridge CB3 0FA<br/>
          United Kingdom
       </p>
     </div>
-
     <div class="map" style="margin-top:2rem;">
       <iframe
-        width="100%"
-        height="350"
-        frameborder="0"
-        scrolling="no"
-        marginheight="0"
-        marginwidth="0"
+        width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d864.3718938302261!2d0.09450535139904241!3d52.21044455542457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8774a57d62dbd%3A0x35eea80b7f488022!2sElectrical%20Engineering%20Division%20Building%2C%209%20JJ%20Thomson%20Ave%2C%20Cambridge%20CB3%200FA!5e0!3m2!1sen!2suk!4v1744882578098!5m2!1sen!2suk">
       </iframe>
     </div>
@@ -57,5 +95,11 @@
     </div>
   </footer>
 
+  <!-- NAV TOGGLE SCRIPT -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu   = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
+  </script>
 </body>
 </html>

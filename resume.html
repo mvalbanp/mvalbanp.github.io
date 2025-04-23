@@ -1,19 +1,65 @@
-<!-- File: resume.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Resume – Marco Alban‑Paccha</title>
+  <!-- SEO & Social Sharing metas -->
+  <meta name="description" content="Marco Vinicio Alban-Paccha – Postdoctoral Research Associate at the University of Cambridge researching wearable & implantable bioelectronics.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="Marco Alban-Paccha">
+  <meta property="og:title"       content="Marco Alban-Paccha – Postdoctoral Research Associate">
+  <meta property="og:description" content="Interdisciplinary research at the nexus of medicine & engineering.">
+  <meta property="og:url"         content="https://marcoalban.com/">
+  <meta property="og:image"       content="https://marcoalban.com/assets/img/people/Marco.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@DrMarcoAlban">
+  <meta name="twitter:title"       content="Marco Alban-Paccha – Postdoc @ Cambridge">
+  <meta name="twitter:description" content="Wearable bioelectronics & AI-driven healthcare.">
+  <meta name="twitter:image"       content="https://marcoalban.com/assets/img/people/Marco.jpg">
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marco Vinicio Alban-Paccha",
+    "url": "https://marcoalban.com/",
+    "image": "https://marcoalban.com/assets/img/people/Marco.jpg",
+    "jobTitle": "Postdoctoral Research Associate",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "University of Cambridge"
+    },
+    "sameAs": [
+      "https://twitter.com/DrMarcoAlban",
+      "https://www.linkedin.com/in/marco-vinicio-alban/",
+      "https://scholar.google.com/citations?user=DW_Op-gAAAAJ&hl=en"
+    ],
+    "description": "Interdisciplinary researcher in wearable & implantable bioelectronics at the University of Cambridge."
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
   <!-- NAVIGATION -->
   <nav>
-    <div class="container">
-      <a class="logo" href="index.html">Marco Alban‑Paccha</a>
-      <ul>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Marco Alban‑Paccha</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -25,66 +71,66 @@
   <!-- RESUME CONTENT -->
   <section class="container">
     <h2 class="section-title">Resume</h2>
-    <a class="btn" href="assets/docs/AcademicCV.pdf">Download CV</a>
+    <a href="assets/docs/AcademicCV.pdf" class="btn">Download CV</a>
 
     <!-- Experience -->
     <h3 class="section-title">Experience</h3>
-
     <div class="cards" style="grid-template-columns: 1fr;">
       <div class="card">
         <div class="card-content">
-          <h3>2022 – Present</h3><h2>Postdoctoral Research Associate</h2>
-          <p><strong>Department of Medicine, University of Cambridge, UK</strong><br/>
+          <h3>2022 – Present</h3>
+          <h2>Postdoctoral Research Associate</h2>
+          <p><strong>Department of Engineering, University of Cambridge, UK</strong><br/>
           Application of wearable electronics and mobile apps to understand visceral pain as part of the ADVANTAGE consortium. Supervisor: Prof. George Malliaras.</p>
         </div>
       </div>
-
       <div class="card">
         <div class="card-content">
-          <h3>2022 – Present</h3><h2>Associate Lecturer</h2>
+          <h3>2022 – Present</h3>
+          <h2>Associate Lecturer</h2>
           <p><strong>Faculty of STEM, The Open University, UK</strong><br/>
           Teaching Nanoscale Engineering and The Engineering Project, mentoring undergraduates in engineering fundamentals and design.</p>
         </div>
       </div>
-
       <div class="card">
         <div class="card-content">
-          <h3>2023 – Present</h3><h2>Postdoctoral By‑Fellow</h2>
+          <h3>2023 – Present</h3>
+          <h2>Postdoctoral By‑Fellow</h2>
           <p><strong>Churchill College, University of Cambridge</strong><br/>
           Supporting academic discourse, organizing seminars, and mentoring students.</p>
         </div>
       </div>
     </div>
-
+<br/>
     <!-- Education -->
     <h3 class="section-title">Education</h3>
-
     <div class="cards" style="grid-template-columns: 1fr;">
       <div class="card">
         <div class="card-content">
-          <h3>2018 – 2022</h3><h2>PhD in Electrical Engineering</h2>
+          <h3>2018 – 2022</h3>
+          <h2>PhD in Electrical Engineering</h2>
           <p><strong>KAIST, Daejeon, South Korea</strong><br/>
           Integrated Organic Electronics Laboratory under Prof. Seunghyup Yoo. Research on wearable cardiac sensors and phototherapy platforms.</p>
         </div>
       </div>
-
       <div class="card">
         <div class="card-content">
-          <h3>2016 – 2018</h3><h2>MEng in Micro/Nano Systems</h2>
+          <h3>2016 – 2018</h3>
+          <h2>MEng in Micro/Nano Systems</h2>
           <p><strong>Korea University, Seoul, South Korea</strong><br/>
           Research on electron injection materials for OLEDs under Prof. Byeong‑Kwon Ju.</p>
         </div>
       </div>
-
       <div class="card">
         <div class="card-content">
-          <h3>2006 – 2013</h3><h2>BEng in Mechatronics</h2>
+          <h3>2006 – 2013</h3>
+          <h2>BEng in Mechatronics</h2>
           <p><strong>Armed Forces University – ESPE, Quito, Ecuador</strong><br/>
           Research intern on automation and remote operation systems under Prof. Alejandro Chacon.</p>
         </div>
       </div>
     </div>
-
+<br
     <!-- Skills & Techniques -->
     <h3 class="section-title">Professional Skills & Techniques</h3>
     <ul>
@@ -93,7 +139,6 @@
       <li>Photolithography, SEM/AFM, PCB Fabrication</li>
       <li>Linux/Windows, HTML/CSS, Python, MATLAB</li>
     </ul>
-
   </section>
 
   <!-- FOOTER -->
@@ -103,5 +148,11 @@
     </div>
   </footer>
 
+  <!-- NAV TOGGLE SCRIPT -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu   = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
+  </script>
 </body>
 </html>

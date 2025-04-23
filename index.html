@@ -2,17 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Home – Marco Alban‑Paccha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home – Marco Alban‑Paccha</title>
+  <!-- SEO & Social Sharing metas -->
+  <meta name="description" content="Marco Vinicio Alban-Paccha – Postdoctoral Research Associate at the University of Cambridge researching wearable & implantable bioelectronics.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="Marco Alban-Paccha">
+  <meta property="og:title"       content="Marco Alban-Paccha – Postdoctoral Research Associate">
+  <meta property="og:description" content="Interdisciplinary research at the nexus of medicine & engineering.">
+  <meta property="og:url"         content="https://marcoalban.com/">
+  <meta property="og:image"       content="https://marcoalban.com/assets/img/people/Marco.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@DrMarcoAlban">
+  <meta name="twitter:title"       content="Marco Alban-Paccha – Postdoc @ Cambridge">
+  <meta name="twitter:description" content="Wearable bioelectronics & AI-driven healthcare.">
+  <meta name="twitter:image"       content="https://marcoalban.com/assets/img/people/Marco.jpg">
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marco Vinicio Alban-Paccha",
+    "url": "https://marcoalban.com/",
+    "image": "https://marcoalban.com/assets/img/people/Marco.jpg",
+    "jobTitle": "Postdoctoral Research Associate",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "University of Cambridge"
+    },
+    "sameAs": [
+      "https://twitter.com/DrMarcoAlban",
+      "https://www.linkedin.com/in/marco-vinicio-alban/",
+      "https://scholar.google.com/citations?user=DW_Op-gAAAAJ&hl=en"
+    ],
+    "description": "Interdisciplinary researcher in wearable & implantable bioelectronics at the University of Cambridge."
+  }
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-p1Cm+G4YbVZzO8mG7YJzo+Yd4caBmq80KtxbhSOtSRqXb5E0K+0sq/ht4sd6f+QviwZkzXyp1yvPq57YzW+log=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-
-  <!-- NAV -->
+  <!-- NAVIGATION -->
   <nav>
-    <div class="container">
-      <a class="logo" href="index.html">Marco Alban‑Paccha</a>
-      <ul>
+    <div class="container nav-container">
+      <a href="index.html" class="logo"></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -21,74 +75,70 @@
     </div>
   </nav>
 
-  <!-- HERO WITH PHOTO -->
+  <!-- HERO SECTION -->
   <header class="hero">
     <div class="container hero-content">
-      <h1>Marco Vinicio Alban‑Paccha</h1>
-      <p>Postdoctoral Research Associate, University of Cambridge</p>
-      <div style="margin-top:1rem;">
-        <a class="btn" href="assets/docs/AcademicCV.pdf">Download CV</a>
-        <a class="btn secondary" href="projects.html">Projects</a>
-        
-
-        <!-- SOCIAL ICONS -->
+      <div class="hero-text">
+        <h1>Marco Vinicio Alban‑Paccha</h1>
+        <p class="subtitle">Postdoctoral Research Associate, University of Cambridge</p>
+        <div class="buttons">
+          <a href="assets/docs/AcademicCV.pdf" class="btn">Download CV</a>
+          <a href="projects.html" class="btn btn-outline">Projects</a>
+        </div>
         <div class="social-icons">
           <a href="https://twitter.com/DrMarcoAlban" aria-label="Twitter">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>Twitter</title>
-              <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37 8.6 8.6 0 01-2.73 1.04 4.28 4.28 0 00-7.29 3.9A12.15 12.15 0 013 4.75a4.28 4.28 0 001.32 5.72 4.27 4.27 0 01-1.94-.54v.05a4.28 4.28 0 003.44 4.19 4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.98A8.59 8.59 0 012 19.54a12.11 12.11 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19-.01-.39-.02-.58A8.7 8.7 0 0024 6.56a8.5 8.5 0 01-2.54.7z"/>
-            </svg>
+            <i class="fab fa-twitter fa-2x"></i>
           </a>
           <a href="https://www.linkedin.com/in/marco-vinicio-alban/" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>LinkedIn</title>
-              <path d="M19 0h-14C2.3 0 1 .3 1 1v18c0 .7.3 1 1 1h14c.7 0 1-.3 1-1V1c0-.7-.3-1-1-1zm-11 19H5V8h3v11zm-1.5-12.3C4.6 6.7 4 6.1 4 5.3 4 4.1 5.1 3 6.3 3S8.5 4.1 8.5 5.3C8.5 6.1 7.9 6.7 7 6.7zm13.5 12.3h-3v-5.5c0-1.3-.5-2.2-1.8-2.2-1 0-1.7.7-2 .7v6.9h-3V8h3v1.5c.4-.6 1.1-1.5 2.6-1.5 2 0 3.5 1.3 3.5 4.1v6.9z"/>
-            </svg>
+            <i class="fab fa-linkedin fa-2x"></i>
           </a>
           <a href="mailto:ma2035@cam.ac.uk" aria-label="Email">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>Email</title>
-              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
-            </svg>
+            <i class="fas fa-envelope fa-2x"></i>
           </a>
           <a href="https://scholar.google.com/citations?user=DW_Op-gAAAAJ&hl=en" aria-label="Google Scholar">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <title>Scholar</title>
-              <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2zM11 18v4h2v-4h-2z"/>
-            </svg>
+            <i class="fas fa-graduation-cap fa-2x"></i>
           </a>
         </div>
       </div>
-    </div>
-
-    <div class="hero-image">
-      <img src="assets/img/people/Marco.jpg" alt="Marco Alban‑Paccha">
+      <div class="hero-image">
+        <img src="assets/img/people/Marco.jpg" alt="Marco Alban‑Paccha">
+      </div>
     </div>
   </header>
 
-
-  <!-- ABOUT -->
-  <section class="container">
-    <h2 class="section-title">About Me</h2>
-    <p>Marco is a <strong>Postdoctoral Research Associate at the University of Cambridge</strong>, where he conducts interdisciplinary research at the nexus of medicine and engineering as part of the <strong>ADVANTAGE consortium for visceral pain.</strong> He collaborates closely with clinicians, engineers, and scientists to develop innovative healthcare solutions. In addition to his research, Marco is an <strong>Associate Lecturer at the Open University</strong>, where he teaches <em>Nanoscale Engineering</em> and <em>The Engineering Project</em>, inspiring the next generation of engineers. Since 2023, he has also been a <strong>Postdoctoral By-Fellow at Churchill College, University of Cambridge</strong>, fostering academic discourse and mentoring students.</p>
-    <br>
-    <p>Born and raised in Quito, Ecuador, Marco earned his Engineering Degree in Mechatronics from the University of the Armed Forces in 2013. In 2014, he was awarded the prestigious Korean Government Scholarship Program (now known as the Global Korea Scholarship), which took him to South Korea for graduate studies. He obtained a Master of Engineering in Micro/Nano Systems from Korea University in 2018. His doctoral research at KAIST, completed in 2022 under the mentorship of Prof. Seunghyup Yoo, focused on the development of advanced electronic systems, culminating in a Ph.D. in Electrical Engineering.</p>
-    <br>
-    <p>Marco joined the <strong>University of Cambridge</strong> in 2022 to contribute to advancing healthcare technologies. His research is dedicated to <strong>exploring the transformative potential of wearable and implantable bioelectronics</strong>, focusing on skin-interfacing devices and data-driven solutions for clinical applications. His work spans bioelectronic sensors, low-power electronics, and artificial intelligence, aiming to develop tools that enable real-time disease diagnosis and management. He is particularly interested in leveraging AI to integrate multimodal data for personalized healthcare and clinical decision-making.</p>
-    <br>
-    <p>In addition to his technical expertise, Marco’s research philosophy emphasizes translational science. <strong>He engages with clinicians, nurses, patients, and study managers to ensure his innovations address real-world challenges in healthcare.</strong> His ongoing projects include a wearable sensor platform for wireless and cuffless cardiovascular monitoring and the development of organic electrochemical transistor-based systems as well as soft robotics and mobile applications.</p>
-    <br>
-    <p>Marco’s journey reflects his passion for interdisciplinary collaboration and innovation. His research has been shaped by global experiences in Ecuador, South Korea, and the UK, and he actively seeks to bridge engineering with medicine to improve patient outcomes. Beyond the lab, Marco is a committed educator, aiming to inspire his students by blending theory with practical, impactful applications.</p>
-    <br>
-    <p>When not immersed in research, Marco enjoys spending time with his young son, introducing him to the wonders of science and the joys of Pokémon.</p>
+  <!-- ABOUT SECTION -->
+  <section class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Marco is a <strong>Postdoctoral Research Associate at the University of Cambridge</strong>, where he conducts interdisciplinary research at the nexus of medicine and engineering as part of the <strong>ADVANTAGE consortium for visceral pain.</strong> He collaborates closely with clinicians, engineers, and scientists to develop innovative healthcare solutions. In addition to his research, Marco is an <strong>Associate Lecturer at the Open University</strong>, where he teaches <em>Nanoscale Engineering</em> and <em>The Engineering Project</em>, inspiring the next generation of engineers. Since 2023, he has also been a <strong>Postdoctoral By-Fellow at Churchill College, University of Cambridge</strong>, fostering academic discourse and mentoring students.</p>
+      <br>
+      <p>Born and raised in Quito, Ecuador, Marco earned his Engineering Degree in Mechatronics from the University of the Armed Forces in 2013. In 2014, he was awarded the prestigious Korean Government Scholarship Program (now known as the Global Korea Scholarship), which took him to South Korea for graduate studies. He obtained a Master of Engineering in Micro/Nano Systems from Korea University in 2018. His doctoral research at KAIST, completed in 2022 under the mentorship of Prof. Seunghyup Yoo, focused on the development of advanced electronic systems, culminating in a Ph.D. in Electrical Engineering.</p>
+      <br>
+      <p>Marco joined the <strong>University of Cambridge</strong> in 2022 to contribute to advancing healthcare technologies. His research is dedicated to <strong>exploring the transformative potential of wearable and implantable bioelectronics</strong>, focusing on skin-interfacing devices and data-driven solutions for clinical applications. His work spans bioelectronic sensors, low-power electronics, and artificial intelligence, aiming to develop tools that enable real-time disease diagnosis and management. He is particularly interested in leveraging AI to integrate multimodal data for personalized healthcare and clinical decision-making.</p>
+      <br>
+      <p>In addition to his technical expertise, Marco’s research philosophy emphasizes translational science. <strong>He engages with clinicians, nurses, patients, and study managers to ensure his innovations address real-world challenges in healthcare.</strong> His ongoing projects include a wearable sensor platform for wireless and cuffless cardiovascular monitoring and the development of organic electrochemical transistor-based systems as well as soft robotics and mobile applications.</p>
+      <br>
+      <p>Marco’s journey reflects his passion for interdisciplinary collaboration and innovation. His research has been shaped by global experiences in Ecuador, South Korea, and the UK, and he actively seeks to bridge engineering with medicine to improve patient outcomes. Beyond the lab, Marco is a committed educator, aiming to inspire his students by blending theory with practical, impactful applications.</p>
+      <br>
+      <p>When not immersed in research, Marco enjoys spending time with his young son, introducing him to the wonders of science and the joys of Pokémon.</p>
+      <!-- content truncated for brevity -->
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      &copy; 2025 Marco Alban‑Paccha
+      &copy; 2025 Marco Alban‑Paccha
     </div>
   </footer>
 
+  <!-- NAVIGATION TOGGLE SCRIPT -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

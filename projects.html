@@ -1,19 +1,65 @@
-<!-- File: projects.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Projects – Marco Alban‑Paccha</title>
+  <!-- SEO & Social Sharing metas -->
+  <meta name="description" content="Marco Vinicio Alban-Paccha – Postdoctoral Research Associate at the University of Cambridge researching wearable & implantable bioelectronics.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="Marco Alban-Paccha">
+  <meta property="og:title"       content="Marco Alban-Paccha – Postdoctoral Research Associate">
+  <meta property="og:description" content="Interdisciplinary research at the nexus of medicine & engineering.">
+  <meta property="og:url"         content="https://marcoalban.com/">
+  <meta property="og:image"       content="https://marcoalban.com/assets/img/people/Marco.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@DrMarcoAlban">
+  <meta name="twitter:title"       content="Marco Alban-Paccha – Postdoc @ Cambridge">
+  <meta name="twitter:description" content="Wearable bioelectronics & AI-driven healthcare.">
+  <meta name="twitter:image"       content="https://marcoalban.com/assets/img/people/Marco.jpg">
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marco Vinicio Alban-Paccha",
+    "url": "https://marcoalban.com/",
+    "image": "https://marcoalban.com/assets/img/people/Marco.jpg",
+    "jobTitle": "Postdoctoral Research Associate",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "University of Cambridge"
+    },
+    "sameAs": [
+      "https://twitter.com/DrMarcoAlban",
+      "https://www.linkedin.com/in/marco-vinicio-alban/",
+      "https://scholar.google.com/citations?user=DW_Op-gAAAAJ&hl=en"
+    ],
+    "description": "Interdisciplinary researcher in wearable & implantable bioelectronics at the University of Cambridge."
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
   <!-- NAVIGATION -->
   <nav>
-    <div class="container">
-      <a class="logo" href="index.html">Marco Alban‑Paccha</a>
-      <ul>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Marco Alban‑Paccha</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -22,11 +68,11 @@
     </div>
   </nav>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS SECTION -->
   <section class="container">
     <h2 class="section-title">Projects</h2>
     <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(300px,1fr));">
-      
+
       <div class="card">
         <img src="assets/img/advantage.png" alt="ADVANTAGE project" />
         <div class="card-content">
@@ -61,5 +107,11 @@
     </div>
   </footer>
 
+  <!-- NAVIGATION TOGGLE SCRIPT -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu   = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
+  </script>
 </body>
 </html>
