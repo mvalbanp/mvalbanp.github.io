@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact – Marco Alban‑Paccha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Marco Alban</title>
+
   <!-- SEO & Social Sharing metas -->
   <meta name="description" content="Marco Vinicio Alban-Paccha – Postdoctoral Research Associate at the University of Cambridge researching wearable & implantable bioelectronics.">
 
@@ -43,63 +44,51 @@
     "description": "Interdisciplinary researcher in wearable & implantable bioelectronics at the University of Cambridge."
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-
-  <!-- NAVIGATION -->
-  <nav>
-    <div class="container nav-container">
-      <a href="index.html" class="logo"></a>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Marco <strong>Alban-Paccha</strong></a>
+      <nav class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="research.html">Research</a>
+        <a href="research.html#publications">Publications</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
     </div>
-  </nav>
+  </header>
 
-  <!-- CONTACT SECTION -->
-  <section class="container">
-    <h2 class="section-title">Get in Touch</h2>
-    <div class="contact-details">
-      <p><strong>Email:</strong> ma2035 at cam dot ac dot uk</p>
-      <p><strong>Address:</strong><br/>
-         Electrical Engineering Division<br/>
-         9 JJ Thomson Ave<br/>
-         Cambridge CB3 0FA<br/>
-         United Kingdom
-      </p>
-    </div>
-    <div class="map" style="margin-top:2rem;">
-      <iframe
-        width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d864.3718938302261!2d0.09450535139904241!3d52.21044455542457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8774a57d62dbd%3A0x35eea80b7f488022!2sElectrical%20Engineering%20Division%20Building%2C%209%20JJ%20Thomson%20Ave%2C%20Cambridge%20CB3%200FA!5e0!3m2!1sen!2suk!4v1744882578098!5m2!1sen!2suk">
-      </iframe>
-    </div>
-  </section>
+  <main class="container">
+    <section class="block">
+      <h1>Contact</h1>
+      <p>For collaborations, media or supervision enquiries, email works best.</p>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      &copy; 2025 Marco Alban‑Paccha
+      <div class="Contact">
+        <div>
+          <h3>Email</h3>
+          <!-- Obfuscated target. JS will fill text and href -->
+          <p><a id="email" class="mono" data-user="ma2035" data-domain="cam.ac.uk" href="#" rel="nofollow noopener">[enable JS]</a></p>
+          <noscript><p class="mono">ma2035 [at] cam [dot] ac [dot] uk</p></noscript>
+
+          <h3>Location</h3>
+          <p>
+            <iframe width=100% height=100% id="gmap_canvas" src="https://maps.google.com/maps?q=addenbrookes&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
+            <p>I'm located at Addenbrooke's Hospital<br>Cambridge University Hospitals<br>NHS Foundation Trust<br>Hills Road, Cambridge<br>CB2 0QQ</p>
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container ftr">
+      <small>© <span id="year"></span> Marco Alban.</small>
     </div>
   </footer>
-
-  <!-- NAV TOGGLE SCRIPT -->
-  <script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu   = document.querySelector('.nav-menu');
-    navToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
-  </script>
 </body>
 </html>
